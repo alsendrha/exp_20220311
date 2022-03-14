@@ -28,7 +28,7 @@ router.post('/insert', async function(req, res, next){
         return res.json({status:0});
 
     } catch (e) {
-        console.log(e);
+        console.error(e);
         return res.json({status:-1});
     }
 
@@ -40,7 +40,7 @@ router.get('/select', async function(req, res, next) {
         const result = await Book.find({}).sort({_id:-1});
         res.json({status:200, result:result});
     } catch (e) {
-        console.log(e);
+        console.error(e);
         res.json({status:-1});
     }
 });
