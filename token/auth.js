@@ -40,7 +40,7 @@ const self = module.exports = {
 
             // routes/member.js에서 사용가능하도록 정보전달
             req.body.USERID = sessinData.USERID;
-            req.body.USERNAME = sessinData.USERID;
+            req.body.USERNAME = sessinData.USERNAME;
 
             next(); // routes/member.js로 전환
 

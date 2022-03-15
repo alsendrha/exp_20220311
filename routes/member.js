@@ -82,8 +82,15 @@ router.delete('/delete', auth.checkToken, async function(req, res, next) {
         const query = {_id :sessionID};
      
         const result = await Member.deleteOne(query);
+        console.log(result);
+        if(result.deletedCount === 1){
+            
+            return res.send({status:200});  
+
+        }
+        return res.send({status:0});  
         
-        return res.send({status:200, result:result});  
+        
 
     } catch (e) {
         console.error(e);
@@ -135,9 +142,28 @@ router.get('/idcheck', async function(req, res, next) {
         const result = await Member.findOne({_id : req.query.id});
         console.log(result);
         if(result !== null){
+            return res.send({status:200, result:1});
+        }
+        return res.send({status:200, result:0});
+
+    } catch (e) {
+        console.error(e);
+        return res.send({status:-1});
+        
+    }
+});
+
+// 127.0.0.1:3000/member/selectone
+router.get('/selectone',  auth.checkToken, async function(req, res, next) {
+    try {
+        const sessionID = req.body.USERID; // 토큰에서 추출
+        // 아이디에 해당하는 값을 조회
+        const result = await Member.findOne({_id : sessionID}).select({"name":1, "age":1});
+        console.log(result);
+        if(result !== null){
             return res.send({status:200, result:result});
         }
-        return res.send({status:0});
+        return res.send({status:200, result:0});
 
     } catch (e) {
         console.error(e);
@@ -171,8 +197,7 @@ router.post('/insert', async function(req, res, next) {
     
     } catch (e) {
         console.error(e);
-        return res.json({status:-1});
-        
+        return res.json({status:-1});   
     }
 
 });

@@ -14,6 +14,8 @@ db.once('open', function(){
 });
 
 
+require('./routes/chat'); // rest apt가 아님 url 불필요
+
 // routes 등록
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -36,6 +38,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/book', bookRouter);
 app.use('/member', memberRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
