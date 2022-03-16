@@ -14,6 +14,7 @@ const auth = require('../token/auth');
 var Member = require('../models/member');
 const { vary } = require('express/lib/response');
 const { query } = require('express');
+const member = require('../models/member');
 
 
 // 로그인 : 회원정보수정
@@ -80,18 +81,21 @@ router.put('/updatepw', auth.checkToken, async function(req, res, next) {
 router.delete('/delete', auth.checkToken, async function(req, res, next) {
     try {
         const sessionID = req.body.USERID;
-        const query = {_id :sessionID};
-     
-        const result = await Member.deleteOne(query);
-        console.log(result);
-        if(result.deletedCount === 1){
-            
-            return res.send({status:200});  
+        const hashPw = crypto.createHmac('sha256', sessionID).update(req.body.pw).digest('hex');
+        const query = {_id :sessionID, password : hashPw };
 
+        var Member1 = await Member.findOne(query);
+        
+        if(Member1 !== null){
+            const result = await Member.deleteOne(Member1);
+            console.log(result);
+            if(result.deletedCount === 1){
+                
+                return res.send({status:200});  
+            }
+            
         }
         return res.send({status:0});  
-        
-        
 
     } catch (e) {
         console.error(e);
