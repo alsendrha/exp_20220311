@@ -70,7 +70,7 @@ router.get('/groupcode1', async function(req, res, next) {
                 }
             }
 
-        ]);
+        ]).sort({"_id":1});
         return res.send({status:200, result:result});
        
     } catch (e) {
@@ -102,7 +102,7 @@ router.get('/groupcode2', async function(req, res, next) {
                 }
             }
 
-        ]);
+        ]).sort({"_id":1});
         return res.send({status:200, result:result});
        
     } catch (e) {
@@ -134,7 +134,7 @@ router.get('/groupcode3', async function(req, res, next) {
                 }
             }
 
-        ]);
+        ]).sort({"_id":1});
         return res.send({status:200, result:result});
        
     } catch (e) {

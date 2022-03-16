@@ -172,6 +172,25 @@ router.get('/selectone',  auth.checkToken, async function(req, res, next) {
     }
 });
 
+// 127.0.0.1:3000/member/selectone
+router.get('/selectonepw',  auth.checkToken, async function(req, res, next) {
+    try {
+        const sessionID = req.body.USERID; // 토큰에서 추출
+        // 아이디에 해당하는 값을 조회
+        const result = await Member.findOne({_id : sessionID}).select({"pw":1});
+        console.log(result);
+        if(result !== null){
+            return res.send({status:200, result:result});
+        }
+        return res.send({status:200, result:0});
+
+    } catch (e) {
+        console.error(e);
+        return res.send({status:-1});
+        
+    }
+});
+
 // 127.0.0.1:3000/member/insert
 router.post('/insert', async function(req, res, next) {
     try {
