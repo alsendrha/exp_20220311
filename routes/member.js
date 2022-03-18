@@ -81,7 +81,6 @@ router.put('/updatepw', auth.checkToken, async function(req, res, next) {
 router.delete('/delete', auth.checkToken, async function(req, res, next) {
     try {
         const sessionID = req.body.USERID;
-<<<<<<< Updated upstream
         const hashPw = crypto.createHmac('sha256', sessionID).update(req.body.pw).digest('hex');
         const query = {_id :sessionID, password : hashPw };
 
@@ -97,18 +96,6 @@ router.delete('/delete', auth.checkToken, async function(req, res, next) {
             
         }
         return res.send({status:0});  
-=======
-        const query = {_id :sessionID};
-     
-        const result = await Member.deleteOne(query);
-        console.log(result);
-
-        if(result.deletedCount === 1){
-            
-            return res.send({status:200});  
-        }
-        return res.send({status:0});     
->>>>>>> Stashed changes
 
     } catch (e) {
         console.error(e);
