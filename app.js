@@ -15,6 +15,7 @@ db.once('open', function(){
 
 
 require('./routes/chat'); // rest apt가 아님 url 불필요
+//require('./routes/cron'); // rest apt가 아님 url 불필요
 
 // routes 등록
 var indexRouter = require('./routes/index');
@@ -22,6 +23,7 @@ var usersRouter = require('./routes/users');
 var bookRouter = require('./routes/book');
 var memberRouter = require('./routes/member');
 var itemRouter = require('./routes/item');
+var uploadRouter = require('./routes/upload');
 
 var app = express();
 
@@ -40,6 +42,7 @@ app.use('/users', usersRouter);
 app.use('/book', bookRouter);
 app.use('/member', memberRouter);
 app.use('/item', itemRouter);
+app.use('/upload', uploadRouter);
 
 
 // catch 404 and forward to error handler
