@@ -120,7 +120,7 @@
           "active": false,
           "left": 37,
           "top": 112,
-          "zIndex": 139,
+          "zIndex": 2,
           "widthName": 65.22265625,
           "widthComment": 67,
           "color": "#FFEB3B"
@@ -206,7 +206,7 @@
           "active": false,
           "left": 593,
           "top": 106,
-          "zIndex": 138,
+          "zIndex": 1,
           "widthName": 79.86669921875,
           "widthComment": 67,
           "color": "#E91E63"
@@ -315,7 +315,7 @@
           "active": false,
           "left": 619.6666,
           "top": 486.2222,
-          "zIndex": 189,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 80,
           "color": "#00E3FF"
@@ -401,7 +401,7 @@
           "active": false,
           "left": 63.5555,
           "top": 496,
-          "zIndex": 141,
+          "zIndex": 3,
           "widthName": 60,
           "widthComment": 67,
           "color": "#9C27B0"
@@ -461,10 +461,10 @@
           }
         ],
         "ui": {
-          "active": false,
-          "left": 618.555,
-          "top": 739.5558,
-          "zIndex": 186,
+          "active": true,
+          "left": 346.3331,
+          "top": 698.445,
+          "zIndex": 7,
           "widthName": 86.2841796875,
           "widthComment": 80
         },
@@ -566,9 +566,9 @@
           "columnIds": [
             "95c8a89e-4f3d-4ea2-aaa1-1404cd830fb4"
           ],
-          "x": 814.279853515625,
-          "y": 739.5558,
-          "direction": "top"
+          "x": 737.7828070312501,
+          "y": 753.445,
+          "direction": "right"
         },
         "end": {
           "tableId": "462cafd9-db4a-4983-a38c-a49b1c783d98",
