@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -71,
-    "scrollLeft": -326,
-    "zoomLevel": 0.9,
+    "scrollTop": -482,
+    "scrollLeft": -421,
+    "zoomLevel": 0.5,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -191,7 +191,7 @@
           "active": false,
           "left": 5,
           "top": 320.0264,
-          "zIndex": 6,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 67,
           "color": "#7988FF"
@@ -616,7 +616,7 @@
           "active": false,
           "left": 932.6954,
           "top": 270.4713,
-          "zIndex": 2,
+          "zIndex": 9,
           "widthName": 60,
           "widthComment": 67,
           "color": "#FF0000"
@@ -631,7 +631,7 @@
           {
             "name": "IMGCODE",
             "comment": "물품이미지코드",
-            "dataType": "NUMBER",
+            "dataType": "NUMBERNUMBERNUM",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -646,7 +646,7 @@
               "pfk": false,
               "widthName": 60.72216796875,
               "widthComment": 93,
-              "widthDataType": 60,
+              "widthDataType": 139.4775390625,
               "widthDefault": 60
             },
             "id": "07f10a8d-e230-4c4d-b15a-c4b0fb02cf48"
@@ -794,7 +794,7 @@
           "active": false,
           "left": 1488.8409,
           "top": 297.112,
-          "zIndex": 8,
+          "zIndex": 46,
           "widthName": 70.73876953125,
           "widthComment": 106
         },
@@ -971,7 +971,7 @@
           "active": false,
           "left": 45,
           "top": 793.6496,
-          "zIndex": 5,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 80,
           "color": "#5EFF58"
@@ -1103,7 +1103,7 @@
           "active": false,
           "left": 630.9128,
           "top": 804.0048,
-          "zIndex": 4,
+          "zIndex": 3,
           "widthName": 60,
           "widthComment": 93,
           "color": "#8E00FF"
@@ -1162,9 +1162,9 @@
             "id": "0e67d2a4-41e0-4681-be0a-fa61b9b2eb9b"
           },
           {
-            "name": "BRAGDATE",
+            "name": "BREGDATE",
             "comment": "주문일자",
-            "dataType": "TIMESTAMP",
+            "dataType": "TIMESTAMP ",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -1177,9 +1177,9 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 65.3115234375,
+              "widthName": 63.6611328125,
               "widthComment": 60,
-              "widthDataType": 71.93212890625,
+              "widthDataType": 76.50244140625,
               "widthDefault": 60
             },
             "id": "c9da1013-cf19-410a-8ca9-c2720d3f4011"
@@ -1235,7 +1235,7 @@
           "active": false,
           "left": 546.6667,
           "top": 20,
-          "zIndex": 9,
+          "zIndex": 8,
           "widthName": 60,
           "widthComment": 67,
           "color": "#FFFF00"
@@ -1344,7 +1344,7 @@
           "active": false,
           "left": 502,
           "top": 318,
-          "zIndex": 7,
+          "zIndex": 6,
           "widthName": 60,
           "widthComment": 93,
           "color": "#FFA100"
@@ -1363,7 +1363,7 @@
           "active": false,
           "left": 617.99603174603,
           "top": 538.9404761904759,
-          "zIndex": 3,
+          "zIndex": 2,
           "width": 263,
           "height": 153
         },
@@ -1547,7 +1547,7 @@
           "columnIds": [
             "035f6734-cd37-4aa2-87e4-aa81005d4e84"
           ],
-          "x": 935.4313484375,
+          "x": 933.7809578125,
           "y": 105.75,
           "direction": "right"
         },
@@ -1590,7 +1590,7 @@
           "columnIds": [
             "211b560e-4103-405b-8eb0-6d9afe12c430"
           ],
-          "x": 741.04902421875,
+          "x": 740.22382890625,
           "y": 191.5,
           "direction": "bottom"
         },
