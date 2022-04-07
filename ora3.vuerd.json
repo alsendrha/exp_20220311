@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -374,
-    "scrollLeft": -278,
+    "scrollTop": -217,
+    "scrollLeft": -321,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -19,7 +19,7 @@
     },
     "database": "Oracle",
     "databaseName": "",
-    "canvasType": "ERD",
+    "canvasType": "@vuerd/builtin-generator-code",
     "language": "Java",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -191,7 +191,7 @@
           "active": false,
           "left": 5,
           "top": 320.0264,
-          "zIndex": 5,
+          "zIndex": 3,
           "widthName": 60,
           "widthComment": 67,
           "color": "#7988FF"
@@ -616,7 +616,7 @@
           "active": false,
           "left": 932.6954,
           "top": 270.4713,
-          "zIndex": 8,
+          "zIndex": 6,
           "widthName": 60,
           "widthComment": 67,
           "color": "#FF0000"
@@ -794,7 +794,7 @@
           "active": false,
           "left": 1483.52978515625,
           "top": 297.112,
-          "zIndex": 9,
+          "zIndex": 7,
           "widthName": 70.73876953125,
           "widthComment": 106
         },
@@ -971,7 +971,7 @@
           "active": false,
           "left": 45,
           "top": 793.6496,
-          "zIndex": 4,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 80,
           "color": "#5EFF58"
@@ -1103,7 +1103,7 @@
           "active": false,
           "left": 630.9128,
           "top": 804.0048,
-          "zIndex": 13,
+          "zIndex": 9,
           "widthName": 60,
           "widthComment": 93,
           "color": "#8E00FF"
@@ -1235,7 +1235,7 @@
           "active": false,
           "left": 546.6667,
           "top": 20,
-          "zIndex": 7,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 67,
           "color": "#FFFF00"
@@ -1344,13 +1344,52 @@
           "active": false,
           "left": 502,
           "top": 318,
-          "zIndex": 6,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 93,
           "color": "#FFA100"
         },
         "visible": true,
         "id": "9326d14f-74b0-4a86-ba59-a2f05e63b1de"
+      },
+      {
+        "name": "",
+        "comment": "즐겨찾기테이블",
+        "columns": [
+          {
+            "name": "",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "935d220f-a004-46a0-9481-3c094b72bedb"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 1002.25,
+          "top": 710.75,
+          "zIndex": 10,
+          "widthName": 60,
+          "widthComment": 93
+        },
+        "visible": true,
+        "id": "1cbea079-501b-469c-bd44-bc007c4fe7ec"
       }
     ],
     "indexes": []
@@ -1363,7 +1402,7 @@
           "active": false,
           "left": 617.99603174603,
           "top": 538.9404761904759,
-          "zIndex": 10,
+          "zIndex": 8,
           "width": 263,
           "height": 153
         },
